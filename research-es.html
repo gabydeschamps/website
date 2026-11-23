@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investigación · Gabriela Deschamps</title>
+  <meta name="description" content="Investigación de Gabriela Deschamps sobre maternidad, violencia de pareja y género en el desarrollo.">
+  <link rel="alternate" hreflang="en" href="research.html">
+  <link rel="alternate" hreflang="es" href="research-es.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-name" href="index-es.html">Gabriela Deschamps</a>
+      <nav>
+        <a href="index-es.html">Inicio</a>
+        <a href="research-es.html" class="active">Investigación</a>
+        <a href="cv.pdf">CV</a>
+        <span class="lang"><a href="research.html" lang="en">EN</a> / <span class="current">ES</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Documentos de trabajo</h2>
+
+      <article class="paper">
+        <p class="paper-title" lang="en">
+          <a href="https://drive.google.com/file/d/1K6XHh_PpdOLtD5CjHqZ3EwWHlTZFZ8nu/view?usp=drive_link">Motherhood and Violence</a>
+        </p>
+        <p class="note">Premio Banamex de Economía 2025, segundo lugar</p>
+        <div class="links">
+          <button class="btn" type="button" aria-expanded="false" aria-controls="abs-motherhood">Resumen</button>
+          <a class="btn" href="https://drive.google.com/file/d/1K6XHh_PpdOLtD5CjHqZ3EwWHlTZFZ8nu/view?usp=drive_link">Artículo (en inglés)</a>
+          <a class="btn" href="https://ucleconbrief.co.uk/2026/11/19/why-mothers-face-more-violence-from-their-partners-evidence-from-mexico/">Nota de política pública (en inglés)</a>
+        </div>
+        <div class="abstract-text" id="abs-motherhood" hidden>
+          Entender por qué las mujeres sufren violencia de pareja es fundamental para poder prevenirla. Que una
+          mujer viva violencia depende de dos cosas: de que su pareja ejerza violencia, y de que ella permanezca en
+          esa relación. Distinguir entre estos mecanismos es importante para diseñar políticas efectivas, pero
+          no es posible hacerlo con las medidas de violencia utilizadas habitualmente. En este trabajo propongo
+          un marco teórico y empírico para distinguirlos, y lo aplico al contexto de la maternidad, donde la
+          violencia de pareja suele aumentar. Desarrollo un modelo simple que genera predicciones distintas para
+          cada mecanismo, y las contrasto con datos mexicanos que registran no solo la violencia actual, sino
+          también el historial de violencia y separación con parejas anteriores. Para establecer causalidad,
+          utilizo la apertura de farmacias como un cambio inesperado en el acceso a anticonceptivos. Encuentro
+          que la maternidad aumenta la probabilidad de que una mujer sufra violencia, pero no porque los hombres
+          se vuelvan violentos, sino porque la maternidad dificulta que las mujeres salgan de relaciones
+          abusivas.
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Proyectos en curso</h2>
+      <ul class="wip-list">
+        <li>
+          <p class="paper-title" lang="en">Child Penalties in Time Use: A Global Perspective</p>
+          <p class="coauthors">con Amory Gethin, Camille Landais y Gabriel Leite-Mariante</p>
+        </li>
+        <li>
+          <p class="paper-title" lang="en">Understanding the Causes of Intimate Partner Violence: Experimental Evidence from South Africa</p>
+          <p class="coauthors">con Nilmini Herath y Yeukai Chideya</p>
+        </li>
+        <li>
+          <p class="paper-title" lang="en">Social Support and Intimate Partner Violence</p>
+          <p class="coauthors">con Sanna Bergvall</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Última actualización: noviembre de 2026</footer>
+
+  <script>
+    document.querySelectorAll('button[aria-controls]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        panel.hidden = open;
+      });
+    });
+  </script>
+</body>
+</html>
