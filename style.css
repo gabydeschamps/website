@@ -91,15 +91,15 @@ main {
 /* ---------- About ---------- */
 .about {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 44px;
   align-items: start;
 }
 .portrait {
-  width: 260px;
-  aspect-ratio: 4 / 3;
+  width: 220px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 45% 40%;
+  object-position: 42% 40%;
   border-radius: 4px;
   display: block;
   background: #e9e6df;
@@ -212,8 +212,8 @@ footer {
 @media (max-width: 720px) {
   body { font-size: 17px; }
   main { padding: 36px 20px 56px; }
-  .about { grid-template-columns: 1fr; gap: 28px; }
-  .portrait { width: 100%; max-width: 320px; }
+  .about { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .portrait { width: 100%; max-width: 320px; aspect-ratio: 4 / 3; object-position: 45% 40%; }
   .site-header .inner { padding: 20px; }
   nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 11px; }
   nav a { margin-left: 0; font-size: 12px; letter-spacing: 0.05em; }
