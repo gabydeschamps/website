@@ -214,6 +214,8 @@ footer {
   main { padding: 36px 20px 56px; }
   .about { grid-template-columns: 1fr; gap: 28px; }
   .portrait { width: 100%; max-width: 320px; }
-  nav a { margin-left: 18px; }
-  .lang { margin-left: 14px; padding-left: 12px; }
+  .site-header .inner { padding: 20px; }
+  nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 11px; }
+  nav a { margin-left: 0; font-size: 12px; letter-spacing: 0.05em; }
+  .lang { margin-left: 0; padding-left: 0; border-left: 0; white-space: nowrap; letter-spacing: 0.04em; }
 }
